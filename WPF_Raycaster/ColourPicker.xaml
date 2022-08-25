@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_Raycaster.ColourPicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Raycaster"
+        mc:Ignorable="d"
+        Title="ColourPicker" Height="150" Width="200">
+    <Grid>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,56,10"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,11,10"/>
+        <Rectangle x:Name="rectColourPreview" HorizontalAlignment="Left" Height="25" Margin="142,4,0,0" Fill="Black" VerticalAlignment="Top" Width="48"/>
+
+        <Slider x:Name="sliderRed" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Margin="0,33,10,0" Minimum="0" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <TextBox x:Name="txtRed" HorizontalAlignment="Right" VerticalAlignment="Top" Width="45" Margin="0,33,140,0" PreviewTextInput="NumberValidationTextBox"/>
+
+        <Slider x:Name="sliderGreen" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Margin="0,53,10,0" Minimum="0" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <TextBox x:Name="txtGreen" HorizontalAlignment="Right" VerticalAlignment="Top" Width="45" Margin="0,53,140,0" PreviewTextInput="NumberValidationTextBox"/>
+
+        <Slider x:Name="sliderBlue" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Margin="0,73,10,0" Minimum="0" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <TextBox x:Name="txtBlue" HorizontalAlignment="Right" VerticalAlignment="Top" Width="45" Margin="0,73,140,0" PreviewTextInput="NumberValidationTextBox"/>
+
+        <Label Content="Pick colour:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
