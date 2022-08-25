@@ -1,10 +1,11 @@
 # WPF_Raycaster
 I've just started a diploma in programming and this one of the projects I've started on the side to help me get familiar with WPF.
+
 It's a pretty janky raycasting engine where:
-You can run around with WASD
-Look with L/R arrows
-Jump with SPACE
-Crouch with SHIFT
+- You can run around with WASD
+- Look with L/R arrows
+- Jump with SPACE
+- Crouch with SHIFT
 
 The map on the right can be used to draw and edit the map in real time, just select a swatch and draw away. Paint with left mouse and erase with right mouse.
 
